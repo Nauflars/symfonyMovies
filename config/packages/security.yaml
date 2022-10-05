@@ -1,0 +1,13 @@
+security:
+    providers:
+        db_symfony:
+            entity:
+                class: App\Entity\User
+                property: apiToken
+    firewalls:
+        main:
+            anonymous: true
+            logout: ~
+            guard:
+                authenticators:
+                    - App\Security\TokenAuthenticator
