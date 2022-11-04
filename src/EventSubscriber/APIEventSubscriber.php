@@ -15,6 +15,7 @@ class APIEventSubscriber implements EventSubscriberInterface
 
     public function onControllerEvent(ControllerEvent $event)
     {
+        //test
             $numMessages = 2;
            $this->messageService->createMessage($numMessages);
     }
