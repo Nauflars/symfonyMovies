@@ -22,6 +22,7 @@ class APIEventSubscriber implements EventSubscriberInterface
 
     public static function getSubscribedEvents()
     {
+        //test commit
         return [
             ControllerEvent::class => 'onControllerEvent',
         ];
